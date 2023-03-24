@@ -1,0 +1,71 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title LawnAdmin
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        
+        
+
+        // Google fonts
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
+            .container.px-5
+                a.navbar-brand.fw-bold(href='index.html') LawnAdmin
+                //- button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                //-     | Menu
+                //-     i.bi-list
+                //- #navbarResponsive.collapse.navbar-collapse
+                //-     ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
+                //-         li.nav-item
+                //-             a.nav-link.me-lg-3(href='#features') Features
+                //-         li.nav-item
+                //-             a.nav-link.me-lg-3(href='#download') Download
+                //-         li.nav-item
+                //-             a.nav-link.me-lg-3(href='#LawnAdminClient') LawnAdmin Client
+                //-     //- a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
+                //-     a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='#contact') 
+                //-         span.d-flex.align-items-center
+                //-             i.bi-chat-text-fill.me-2
+                //-             span.small Contact us
+                            
+
+       
+
+
+        // basic webform to get usernam and password
+        section class="py-5"
+            h1 Login
+        form(action='/login', method='POST')
+            input(type='text', name='username')
+            input(type='password', name='password')
+            input(type='submit', value='Login')
+
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+

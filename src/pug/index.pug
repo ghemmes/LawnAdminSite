@@ -1,0 +1,494 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title LawnAdmin
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        
+        
+
+        // Google fonts
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
+            .container.px-5
+                a.navbar-brand.fw-bold(href='#page-top') LawnAdmin
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.bi-list
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#features') Features
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#download') Download
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#LawnAdminClient') LawnAdmin Client
+                    //- a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
+                    a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='#contact') 
+                        span.d-flex.align-items-center
+                            i.bi-chat-text-fill.me-2
+                            span.small Contact us
+                            
+
+       
+      
+
+       
+
+                    
+
+        // Mashead header
+        header.masthead
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-6
+                        // Mashead text and app badges
+                        .mb-5.mb-lg-0.text-center.text-lg-start
+                            h1.display-1.lh-1.mb-3 LawnAdmin
+                            p.lead.fw-normal.text-muted.mb-5  Is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+                            h4.mb-3 Major updates coming soon! 
+                            .d-flex.flex-column.flex-lg-row.align-items-center
+                                a.me-lg-3.mb-4.mb-lg-0(href='https://apps.apple.com/ca/app/lawnadmin/id1610898203?platform=iphone')
+                                    img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+                                a(href='https://apps.apple.com/ca/app/lawnadmin/id1610898203?platform=iphone')
+                                    img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+                                   
+                    .col-lg-6
+                        // Masthead device mockup feature
+                        .masthead-device-mockup
+                            include includes/gradient-circle
+                            include includes/shape-1
+                            include includes/shape-2
+                            .device-wrapper
+                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                    .screen.bg-black
+                                        // PUT CONTENTS HERE:
+                                        // * * This can be a video, image, or just about anything else.
+                                        // * * Set the max width of your media to 100% and the height to
+                                        // * * 100% like the demo example below.
+                                        image <img src="assets\img\Login1.png", alt="App" style="width:100%;height:100%;">
+                                        
+                                        //- video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                        //-     source(src='assets\img\Use.png', type='image/png')
+
+       
+
+
+        // Quote/testimonial aside
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-xl-8
+                        .h2.fs-1.text-white.mb-4 “An intuitive solution designed for a prosperous industry becoming increasingly more reliant on technology!”
+                        .h4.fw-normal.text-white.mb-4 - Bodner Brothers Landscaping
+                 
+
+        // App features section
+        section#features
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-8.order-lg-1.mb-5.mb-lg-0
+                        .container-fluid.px-5
+                            .row.gx-5
+                                .col-md-6.mb-5
+                                    // Feature item
+                                    .text-center
+                                        i.bi-calendar-event.icon-feature
+                                        h3.font-alt Scheduling Assistant Tool
+                                        p.text-muted.mb-0 Ensure all your jobs are scheduled so you do not run the risk of overbooking!
+                                .col-md-6.mb-5
+                                    // Feature item
+                                    .text-center
+                                        i.bi-receipt.icon-feature
+                                        h3.font-alt Invoice Tracking 
+                                        p.text-muted.mb-0 Decrease time spent on adding up past due invoices with LawnAdmin's customer outstanding balance tool
+                            .row
+                                .col-md-6.mb-5.mb-md-0
+                                    // Feature item
+                                    .text-center
+                                        i.bi-envelope.icon-feature
+                                        h3.font-alt Email Invoices
+                                        p.text-muted.mb-0 Increase productivity by customer email invoice notifications!
+                                .col-md-6
+                                    // Feature item
+                                    .text-center
+                                        i.bi-wrench-adjustable.icon-feature
+                                        h3.font-alt Equipment Records
+                                        p.text-muted.mb-0 Record equipment maintenance to keep your fleet running and avoid down time!
+                    .col-lg-4.order-lg-0
+                        // Features section device mockup
+                        .features-device-mockup
+                            include includes/gradient-circle
+                            include includes/shape-1
+                            include includes/shape-2
+                            .device-wrapper
+                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                    .screen.bg-black
+                                        // PUT CONTENTS HERE:
+                                        // * * This can be a video, image, or just about anything else.
+                                        // * * Set the max width of your media to 100% and the height to
+                                        // * * 100% like the demo example below.
+
+                                        //insert use.png here
+                                        
+                                        image <img src="assets\img\Main2.png" alt="App" style="width:100%;height:100%;">
+
+        // Basic features section
+        section.bg-light
+            .container.px-5
+                .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                    .col-12.col-lg-5
+                        h2.display-4.lh-1.mb-4 Enter a new age of landscaping
+                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0LawnAdmin The landscaping industry is becoming increasingly more reliant on technology. Landscaping businesses run the risk of under performing compared to their competitors without the proper tools. Both on the job site, and at the desk. It is imperative for landscaping businesses to adopt technology that increases productivity and efficiency. 
+                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0LawnAdmin LawnAdmin allows landscape business owners to spend less time at the desk completing tedious administrative tasks, and more time operating in the field. Whether it is taking on additional customers or striving for a more efficient work-week, LawnAdmin is the solution! 
+
+                    .col-sm-8.col-md-6
+                        .px-5.px-sm-0
+                        image <img src="assets\img\Usem2.webp" alt="App" style="width:130%;height:130%;padding-right:25%;">
+
+        
+        
+        //V1*************************************
+       
+        //- section.client 
+        //-     .container.px-5
+        //-         .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                    
+                    
+        //-             .col-12.col-lg-5
+        //-                 h2.display-4.lh-1.mb-4 Introducing LawnAdmin Client
+        //-                 p.lead.fw-normal.text-muted.mb-5.mb-lg-0LawnAdmin Client is a mobile app that allows your customers to view their invoices, pay their invoices, and view their outstanding balance. 
+        //-                 .d-flex.flex-column.flex-lg-row.align-items-center
+        //-                         a.me-lg-3.mb-4.mb-lg-0(href='#!')
+        //-                             img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+        //-                         a(href='#!')
+        //-                             img.app-badge(src='assets/img/app-store-badge.svg', alt='...')    
+        //-             .col-sm-8.col-md-6
+        //-                 .px-5.px-sm-0
+        //-                 image <img src="assets\img\threeScreenClient1.png" alt="App" style="width:120%;padding-left:0%;">
+
+        //V2************************************* 
+        //- section#features.text-center
+        //-     .container.px-5
+        //-         .row.gx-5
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+       
+
+
+
+
+
+        
+        //- //v3******************************************************************
+        //- //center align title "lawnadmin features"
+        //- section
+        //-     .container.px-5.text-center
+        //-         .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+        //-                 h2.display-4.lh-1.mb-4 Introducing LawnAdmin Client
+        //-                 p.lead.fw-normal.text-muted.mb-5.mb-lg-0LawnAdmin LawnAdmin is designed to increase efficiency and productivity for landscape business owners. 
+        //-                 //center appp-badge image here
+        //-                 //center container
+        //-                 .flex-column.flex-lg-row.align-items-center
+        //-                         a.me-lg-3.mb-4.mb-lg-0(href='#!')
+        //-                             img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+        //-                         a(href='#!')
+        //-                             img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+                    
+        //-         //add image centered here   
+        //-         .col-sm-8.col-md-6
+        //-             .px-5.px-sm-0
+        //-             image <img src="assets\img\threeScreenClient.png" alt="App" style="width:185%;padding-left:15%;">
+                    
+        
+        //-     .container.px-5.text-center
+        //-         .row.gx-5
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+        //-             .col-lg-3.col-md-6.mb-5.mb-lg-0
+        //-                 .feature
+        //-                     i.bi-calendar-event.icon-feature
+        //-                     h3.fs-3.mb-2 Features
+        //-                     p.mb-0.text-muted LawnAdmin is dedicated to providing business management systems to landscape business owners so they have the ability to increase efficiency and grow their business.
+       
+
+
+        section#LawnAdminClient
+            .container.px-5.text-center
+                .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                        
+                        
+                        h2.display-4.lh-1.mb-4 Introducing LawnAdmin Client (Coming Soon!)
+                        
+                        p.lead.fw-normal.text-muted.mb-5 LawnAdmin Client allows customers of landscaping businesses to check on their outstanding invoice balance, submit service requests and view payment history. LawnAdmin Client allows the client to answer their own questions before reaching out directly to their hired landscape service provider. 
+
+                        
+                        //- .d-flex1.flex-column.flex-lg-row.align-items-center
+                        
+                        //-         a.me-lg-3.mb-4.mb-lg-0(href='#!')
+                        //-             img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+                        //-         a(href='#!')
+                        //-             img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+                    
+                //add image centered here at witdh of 80%
+                .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                        image <img src="assets\img\threeScreenClient1.png" alt="App" style="width:80%; padding-top:5%; padding-bottom:5%; margin-left:auto; margin-right:auto;">
+                    
+                     
+                
+                    
+        
+            .container.px-5.text-center
+                //- .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                //-     h2.display-4.lh-1.mb-4 Notible Features
+                .row.gx-5.justify-content-center
+                    .col-lg-3.col-md-6.mb-5.mb-lg-0
+                        .feature
+                            i.bi-receipt.icon-feature
+                            h3.fs-3.mb-2 Outstanding Balance
+                            p.mb-0.text-muted Allow your customers to see their current outstanding balance in real time!
+                    .col-lg-3.col-md-6.mb-5.mb-lg-0
+                        .feature
+                            i.bi-wrench-adjustable.icon-feature
+                            h3.fs-3.mb-2 Service Requests
+                            p.mb-0.text-muted Lets customers submit service requests in addition to their contractual agreed upon work
+                    .col-lg-3.col-md-6.mb-5.mb-lg-0
+                        .feature
+                            i.bi-journals.icon-feature
+                            h3.fs-3.mb-2 Payment History
+                            p.mb-0.text-muted Alleviate reconciling payment history with LawnAdmin's Client payment history
+        
+      
+
+
+
+
+
+
+        
+        
+        
+        // Call to action section
+        section.cta
+            .cta-content
+                .container.px-5
+                    h2.text-white.display-1.lh-1.mb-4
+                        |Get out of the Office,
+                        br
+                        |and onto the Mower!
+                    a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='', target='_blank') Sign up for free
+
+        // Contact section
+        section#contact
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-lg-8.col-xl-6.text-center
+                        h2.display-4.lh-1.mb-4 Contact us
+                        p.lead.fw-normal.text-muted.mb-5
+                            |Have questions? We have answers. 
+                            br
+                            |Send us a message and we will respond as soon as possible!
+                    .col-lg-6
+                        // Contact form
+                        // link to formspree.io
+                        //"https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;id=f740194c97&amp;f_id=006c3ee3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate 
+                        //form#contactForm(action='https://formspree.io/f/meqdayra', method='POST')
+                       
+
+                        form#contactForm(action='https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;id=f740194c97&amp;f_id=006c3ee3f0', method='POST')
+                            .form-floating.mb-3
+                                input.form-control#name(type="name", name="FNAME", placeholder="Your email", required='')
+                                label(for='name') Name
+                            .form-floating.mb-3
+                                input.form-control#email(type="email", name="EMAIL", placeholder="Your email", required='')
+                                label(for='email') Email address
+                            .form-floating.mb-3
+                                textarea.form-control#message(type="text", name="DESCRIPT", placeholder="Your message")
+                                label(for='message') Message
+                            
+                            // add toggle to subscribe to newsletter
+                            .form-check.mb-3
+                                input.form-check-input#subscribeCheck(type='checkbox', name='subscribe', value='subscribe')
+                                label.form-check-label(for='subscribeCheck') Subscribe to our newsletter
+                          
+                            // add google recaptcha with api key 6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A
+                            .g-recaptcha(data-sitekey="6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A", text="I'm not a robot")
+
+                            
+
+                            .d-grid
+                                button.btn.btn-primary.btn-xl(type='submit') Send
+                            .text-center.text-muted.d-block.mt-3
+                                |Or email us at 
+                                a.nav-link.me-lg-3(href='mailto:support@lawnadmin.com') support@lawnadmin.com
+                          
+        //add develeper info
+        //three horiaontal pictues of the developers with bios underneath
+        //add a link to social media accounts
+        //make background grey 
+        section#bio.bg-light
+             .container.px-5
+                            .row.gx-5.justify-content-center
+                                .col-lg-8.col-xl-6.text-center
+                                    h2.display-4.lh-1.mb-4 Meet the Developers
+                                    p.lead.fw-normal.text-muted.mb-5
+                                        |LawnAdmin was founded by Mark Bodner who scaled his landscaping business and recognized an unmet need in the industry. Gregory Hemmes and Gabriel Wersbe built the infrastructure to bring this solution to the landscaping industry.
+                                        //- br
+                                        //- |Gregory Hemmes and Gabriel Wersbe built the infrastructure to bring this solution to the landscaping industry. 
+                                        //- br
+                                        //- |If you are interested in learning more about our new application, please contact us!
+                                .col-lg-6
+                                    .row.gx-5
+                                        .col-sm-4
+                                            .card.border-0.transform-on-hover
+                                                a(href='https://www.linkedin.com/in/mark-bodner12')
+                                                    //use mark.png here
+                                                    image <img src="assets\img\Mark1.png" alt="Mark" style="width:100%;height:100%;">                                            
+                                                .card-body
+                                                    h6
+                                                        |Mark Bodner
+                                                    p.text-muted.card-text
+                                                        |Full Stack Developer
+                                                    .social-links
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-twitter
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-facebook
+                                                        a(href='https://www.linkedin.com/in/mark-bodner12')
+                                                            i.bi.bi-linkedin
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-github n
+                                                            
+                                        .col-sm-4
+                                            .card.border-0.transform-on-hover
+                                                a(href='www.linkedin.com/in/gregory-hemmes-32162a1ab')
+                                                    //use greg.png here
+                                                    image <img src="assets\img\Greg1.jpg" alt="Greg" style="width:100%;height:10 0%;">
+                                                .card-body
+                                                    h6
+                                                        |Greg Hemmes
+                                                    p.text-muted.card-text
+                                                        |Full Stack Developer
+                                                    .social-links
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-twitter
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-facebook
+                                                        a(href='www.linkedin.com/in/gregory-hemmes-32162a1ab')
+                                                            i.bi.bi-linkedin
+                                                        a(href='https://github.com/ghemmes')
+                                                            i.bi.bi-github
+                                        .col-sm-4
+                                            .card.border-0.transform-on-hover
+                                                a(href='https://www.linkedin.com/in/gabriel-wersebe-0959ab167')
+                                                    //use gabe.jpeg here
+                                                    image <img src="assets\img\Gabe.png" alt="Gabe" style="width:100%;height:100%;">
+                                                .card-body
+                                                    h6
+                                                        |Gabe Wersebe
+                                                    p.text-muted.card-text
+                                                        |Full Stack Developer
+                                                    .social-links
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-twitter
+                                                        //- a(href='#')
+                                                        //-     i.bi.bi-facebook
+                                                        a(href='https://www.linkedin.com/in/gabriel-wersebe-0959ab167')
+                                                            i.bi.bi-linkedin
+                                                        a(href='https://github.com/gwersebe')
+                                                            i.bi.bi-github
+                                .col-lg-8.col-xl-6.text-center
+                                    
+
+                  
+
+        // App badge section
+        section#download.bg-gradient-primary-to-secondary
+            .container.px-5
+                h2.text-center.text-white.font-alt.mb-4 Get the app now!
+                .d-flex.flex-column.flex-lg-row.align-items-center.justify-content-center
+                    a.me-lg-3.mb-4.mb-lg-0(href='#!')
+                        img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+                    a(href='https://apps.apple.com/ca/app/lawnadmin/id1610898203?platform=iphone')
+                        img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+
+        // Footer
+        footer.bg-black.text-center.py-5
+            .container.px-5
+                .text-white-50.small
+                    .mb-2 &copy; LawnAdmin 2023. All Rights Reserved.
+                    a(href='privacy.html') Privacy
+                    span.mx-1 &middot;
+                    //- button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(data-bs-toggle='modal', data-bs-target='#feedbackModal')
+                    //- link to includes/terms.pug
+                    a(href='terms.html') Terms
+                    span.mx-1 &middot;
+                    a(href='#!') FAQ
+        
+        include includes/feedback-modal.pug
+
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
