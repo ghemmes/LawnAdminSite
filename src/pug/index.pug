@@ -2,7 +2,15 @@ doctype html
 html(lang='en')
 
     head
-
+        script(async src="https://www.googletagmanager.com/gtag/js?id=G-72VBPRRE38")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+            dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-72VBPRRE38');
+        
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
@@ -27,8 +35,11 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-    body#page-top
 
+
+
+    body#page-top
+        
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
             .container.px-5

@@ -3,7 +3,7 @@
 * Copyright 2013-2023 Lawn Admin
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
 */
-const admin = require('firebase-admin');
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCBN-wifWLgZlNGnHRue2IWpFgUBosIs9A",
@@ -95,3 +95,12 @@ auth.onAuthStateChanged(function(user) {
 })
     
 
+
+
+        //- <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N62QC1QXN"></script>
+        //- <script>
+        //- window.dataLayer = window.dataLayer || [];
+        //- function gtag(){dataLayer.push(arguments);}
+        //- gtag('js', new Date())
+
+        //- gtag('config', 'G-4N62QC1QXN')
